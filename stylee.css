@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(234, 231, 231);
+  font-family: sans-serif;
+}
+.list {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+h1 {
+  text-align: center;
+  color:hsl(0, 1%, 28%);
+}
+.todo-list {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le décalage à gauche par défaut */
+    margin: 0;             /* Supprime les marges par défaut si nécessaire */
+}
+.sub-item {
+  list-style-type: square;
+  margin-top: 15px;
+  padding-left: 35px;
+}
+.sub-item li {/* Enlève le fond vert hérité pour l'élément de la sous-liste */
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  }
+.todo-list ul {
+  margin-bottom:30px;
+  display: block;
+}
+a {
+    text-decoration: none; /* Supprime le soulignement */
+    display: inline-block;
+}
+.sub-item-link {
+  margin-top:10px;
+}
+.todo-list li {
+   background-color: rgb(207, 234, 207); 
+   padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;/* pour arrondir les angles comme sur l'image */
+}
+/*Couleur du texte des liens non visités*/
+.sub-item-link:link {
+  color: rgb(103, 103, 248);
+}
+/* 19. Couleur du texte des liens visités */
+.sub-item-link:visited {
+  color: rgb(151, 6, 31);
+}
+/*Au survol du lien  */
+.sub-item-link:hover {
+  color: rgb(255, 69, 0);
+}
+/*Lors du clic sur le lien */
+.sub-item-link:active {
+  color: rgb(37, 2, 2);
+}
+/* Quand le lien est sélectionné/focus au clavier (contour coloré) */
+.sub-item-link:focus {
+  outline: 2px solid rgb(0, 128, 255);
+}
