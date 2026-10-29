@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(234, 226, 226);
+}
+.blog-post-card {
+  background-color: white;
+  border-radius: 20px;
+  font-family: sans-serif;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);/* effet ombre*/
+}
+.post-img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  display: block; 
+  border-bottom: 2px solid rgb(249, 147, 147);
+}
+.post-content {
+    line-height: 1.5;
+    padding: 20px;
+}
+.post-title {
+  font-size: 20px;
+  color: rgb(149, 166, 149);
+  margin: 20px;
+}
+.post-excerpt {
+  font-size: 16px;
+  color: rgb(13, 15, 13);
+  margin: 10px;
+}
+.read-more {
+  text-decoration: none; /* Supprime le soulignement */
+  display: inline-block;
+  background-color: rgb(64, 62, 62);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(249, 248, 248);
+}
+.read-more:hover {
+background-color: rgb(105, 101, 101);
+}
