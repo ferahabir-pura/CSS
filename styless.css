@@ -1,0 +1,59 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* Largeur définie à l'aide de l'unité de fenêtre d'affichage vw */
+    width: 90vw;
+  /* Propriété min-height calculée : 100vh moins la somme des paddings (50px haut + 50px bas = 100px) */
+    min-height: calc(100vh - 100px);
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+header {
+    display: flex;
+    flex-direction: column;/* Aligne l'image et le titre verticalement */
+    align-items: center;/* Centre l'image et le titre horizontalement */
+    margin-bottom: 25px;
+}
+header img {
+    max-width: 100%;/* S'assure que l'image reste responsive */
+    width: 320px;/* Largeur approximative pour correspondre à l'image modèle */
+    height: auto;
+    display: block;
+    margin-bottom: 30px;/* Espace entre l'image et le titre H1 */
+}
+
+hr {
+ width: 320%;
+ /* Ajusté en pourcentage par rapport au parent pour correspondre à l'image */
+    border: none;
+    border-top: 2px solid #000000; /* Ligne noire épaisse et nette */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;/* Centre la ligne horizontalement */
+    margin-right: auto;
+}
+/* La largeur de tous les éléments section doit être définie avec un pourcentage */
+section {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;                    
+}
+h1 {
+   color: #5d5555;
+   font-size: 2rem;/* Titre grand et épais */
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+h2 {
+  font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+  
