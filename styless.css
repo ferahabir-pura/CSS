@@ -27,10 +27,10 @@ header img {
 }
 
 hr {
- width: 320%;
+ width: 85%;
  /* Ajusté en pourcentage par rapport au parent pour correspondre à l'image */
     border: none;
-    border-top: 2px solid #000000; /* Ligne noire épaisse et nette */
+    border-top: 2px solid #333333; /* Ligne noire épaisse et nette */
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: auto;/* Centre la ligne horizontalement */
