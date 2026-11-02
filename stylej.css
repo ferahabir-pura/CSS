@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+text-align: center;
+font-size: 28px;
+ margin-bottom: 25px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  font-weight: bold;/*style de police gras normal...*/
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #a34848; /* Bordure rouge/marron comme sur l'image */
+  border-radius: 4px;
+}
+.radio-group {
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.radio-group legend {
+  font-weight: bold;
+} 
+
+.radio-group input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.radio-group label {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.radio-group::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+}
+
+.radio-group:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  background-color: lightgreen;
+}
+
+button {
+display: block;
+width: 100%;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+input:invalid, select:invalid, textarea:invalid{
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+  border-color: green;
+}
+
+input:focus, textarea:focus {
+  border-color: rgb(130, 114, 117);
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(236, 205, 205);
+}
+.radio-group input[type="radio"]:checked {
+  border-color: rgb(151, 237, 151);
+  background-color: rgb(25, 24, 24);
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.4);   
+}
+.radio-group input[type="radio"]:checked +label {
+  color:  green;
+}
+
+input:first-of-type {
+  border-radius: 5px;
+}
