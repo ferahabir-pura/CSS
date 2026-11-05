@@ -1,0 +1,65 @@
+body {
+  height: 100vh;
+  background-image: url(game.jpg);
+  text-align: center;
+  /* Empêche l'image de se répéter en mosaïque */
+  background-repeat: no-repeat;
+  
+  /* Centre parfaitement le fond visuel */
+  background-position: center center;
+  
+  /* Force l'image à couvrir tout l'écran de manière fluide */
+  background-size: cover;
+  
+  /* Fixe le fond pour éviter qu'il ne bouge au défilement */
+  background-attachment: fixed;
+}
+
+.settings-card {
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  margin: auto;
+  margin-top: 30px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  margin: 8px auto;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #f1be32;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+input[type='checkbox']:checked {
+  background-color: #f1be32;
+  border-color: #e2a60d;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px; 
+}
