@@ -1,0 +1,97 @@
+body {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.pricing-card {
+  width: 30%;
+  display: flex;
+  align-items:center;
+  flex: 1;
+  flex-direction: column; 
+  border: 2px solid black;
+  padding: 20px 10px;
+}
+.pricing-container {
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 25px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 20px;
+}
+hr {
+  width: 80%;
+  border-bottom: none;
+  border-color: black;
+  margin-top: 0;
+}
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  align-items: flex-start;
+  margin: 20px 0;  
+  width: 80%;
+}
+.pricing-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; 
+  margin-bottom: 15px;  
+  font-size: 15px;
+  text-align: left; /* Garde le texte propre si une ligne passe à la ligne */
+}
+ .pricing-card li::before {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;        /* Aligne la hauteur de l'icône avec le texte */
+}
+.pricing-card li.available::before {
+  content: "✓";
+  color: #2ecc71;        
+}
+.pricing-card li.unavailable::before {
+  content: "✕";
+  color: #e74c3c;        
+}
+.pricing-card:hover {
+  transform:  scale(1.10); 
+}
+.basic-plan {
+  background-color:rgba(223, 126, 142, 0.05);
+}
+.pro-plan {
+    background-color:rgba(127, 127, 236, 0.08);
+}
+.premium-plan {
+   background-color:rgba(81, 225, 81, 0.05);
+}
+button {
+  background-color: #f1b832; 
+  border: none;
+  width: 85%;
+  height: 35px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+cursor: pointer;
+}
+.pricing-card p {
+  font-weight: bold;
+  color: rgb(93, 88, 88);
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2 {
+   margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
